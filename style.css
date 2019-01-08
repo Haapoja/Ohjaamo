@@ -25,14 +25,6 @@ a:hover {
 
 /* happening in ohjaamo page */
 
-.tribe-events-title {
-    background-color: white !important;
-    border-left: none !important;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
-    line-height: 1.1 !important;
-}
-
 .read-more {
     position: absolute;
     float: right;
@@ -96,7 +88,7 @@ a:hover {
 
 .tribe-this-week-event {
     /* just in case there are multiple events on the same day*/
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
 }
 
 .tribe-event-date-start {
@@ -123,7 +115,7 @@ a:hover {
 } */
 
 .type-tribe_events {
-    padding-bottom: 9px !important;
+    padding-bottom: 12px !important;
 }
 
 .entry-title {
@@ -137,6 +129,10 @@ h1.entry-title {
 }
 
 /* List Css */
+
+.event-is-recurring {
+    display: none !important;
+}
 
 .tribe-events-loop .type-tribe_events {
     border: none !important;
@@ -187,7 +183,7 @@ h1.entry-title {
     background-color: white !important;
     border-left: none !important;
     border-right: none !important;
-    padding-left: 9px !important;
+    padding-left: 14px !important;
 }
 
 .tribe-events-list-event-description {
@@ -209,12 +205,12 @@ h1.entry-title {
 #tribe-events .tribe-events-list .tribe-events-content {
     /*adds space between event image and event text */
     padding: 0 !important;
-    padding-left: 9px !important;
+    padding-left: 14px !important;
 }
 
 .tribe-event-date-start {
     /* adds space between event image and date information */
-    padding-left: 9px !important;
+    padding-left: 14px !important;
 }
 
 .tribe-events-venue-details {
@@ -280,7 +276,9 @@ h1.entry-title {
     height: auto !important;
 }
 
-.tribe-img-hover {
+/* Uncertain about the need for a hover image effect, will save just in case */
+
+/* .tribe-img-hover {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -294,9 +292,9 @@ h1.entry-title {
 
 .custom-container:hover .tribe-img-hover {
     width: 100%;
-}
+} */
 
-.hover-text {
+/* .hover-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -306,8 +304,8 @@ h1.entry-title {
     /* text-align: center;
     position: relative;
     top: 50%;
-    transform: translateY(-50%); */
-}
+    transform: translateY(-50%); 
+} */
 
 /* blogi site */
 

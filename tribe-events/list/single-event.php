@@ -81,9 +81,10 @@ $organizer = tribe_get_organizer();
     <?php echo tribe_event_featured_image( null, 'medium' ); ?>
     <!-- </div> -->
     <div class="tribe-img-hover">
-        <p class="hover-text">
+        <!-- <p class="hover-text">
             <?php the_title() ?>
-        </p>
+            client might not need, or might need indeed?
+        </p> -->
     </div>
 </div>
 
