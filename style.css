@@ -1,0 +1,316 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+a:hover {
+    /* Looks like every single a tag has an white hover, and the site is mostly white */
+    color: black !important;
+}
+
+.fusion-rollover-gallery {
+    /*removes the gallery link from the blog posts page */
+    display: none !important;
+}
+
+.fusion-rollover-sep {
+    /*removes random 5 width div from blog posts page */
+    display: none !important;
+}
+
+/* happening in ohjaamo page */
+
+.tribe-events-title {
+    background-color: white !important;
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.1 !important;
+}
+
+.read-more {
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    font-size: 13px;
+    /* padding-top: 10%; */
+    /* margin-top: 50px !important; */
+}
+
+.read-more a:hover {
+    color: black !important;
+    font-size: 13.5px;
+}
+
+.fusion-breadcrumbs {
+    /* removes unnecessary headings near the nav bar */
+    display: none;
+}
+
+/* single event */
+
+.tribe-events-single-event-title {
+    color: black !important;
+}
+
+.tribe-events-event-categories-label {
+    /* removes category label on single event page */
+    display: none;
+}
+
+.tribe-events-event-categories {
+    /* removes the categories from the category labels */
+    display: none;
+}
+
+/* Front page calendar */
+
+/*Does nothing? too afraid to remove .duration {
+    float: right;
+}
+
+*/
+
+.tribe-this-week-widget-day-wrap .tribe-event-date-start {
+    /* stops the start date from spreading to another line */
+    padding-left: 0 !important;
+}
+
+.tribe-this-week-widget-day-wrap .type-tribe_events {
+    /* removes odd rightside borders from week calendar, might be needed later */
+    border: none !important;
+    position: relative;
+    border-bottom: none !important;
+}
+
+.entry-title .summary {
+    /* might not actually do nothing? investigate */
+    margin-bottom: 300px !important;
+}
+
+.tribe-this-week-event {
+    /* just in case there are multiple events on the same day*/
+    margin-bottom: 20px !important;
+}
+
+.tribe-event-date-start {
+    /* affects frontpage calendar and event list */
+    color: black !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+.tribe-event-time {
+    /* affects frontpage calendar and event list */
+    color: black !important;
+}
+
+/* Single event css */
+
+.tribe-events-duration {
+    margin-top: 0 !important;
+    padding-bottom: 10px;
+}
+
+/* .tribe-events-widget-link {
+    display: none;
+} */
+
+.type-tribe_events {
+    padding-bottom: 9px !important;
+}
+
+.entry-title {
+    /* title for frontpage calendar and single view event */
+    line-height: 1.4 !important;
+}
+
+h1.entry-title {
+    /* title for frontpage calendar and single view event */
+    display: none !important;
+}
+
+/* List Css */
+
+.tribe-events-loop .type-tribe_events {
+    border: none !important;
+    position: relative;
+    border-bottom: 1px dotted black !important;
+}
+
+.tribe-events-read-more {
+    float: right !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width:676px) {
+    .tribe-events-read-more {
+        bottom: -20px !important;
+    }
+}
+
+.tribe-events-read-more:hover {
+    color: black;
+    font-size: 14px;
+}
+
+#tribe-events-bar {
+    display: none !important;
+}
+
+.tribe-events-list-separator-month {
+    /*Used to have venue details, not needed in list view */
+    display: none !important;
+}
+
+.tribe-event-schedule-details {
+    /*date and time */
+    padding: 0px !important;
+}
+
+.type-tribe_events {
+    /* the container for an event */
+    height: auto;
+    border: none;
+}
+
+.tribe-events-list-event-title {
+    background-color: white !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-left: 9px !important;
+}
+
+.tribe-events-list-event-description {
+    /* list events text container */
+    width: 70% !important;
+}
+
+#tribe-events-content-wrapper {
+    /* default width was 700px, too small */
+    max-width: 100% !important;
+}
+
+@media only screen and (max-width:676px) {
+    .tribe-events-list-event-description {
+        width: 100% !important;
+    }
+}
+
+#tribe-events .tribe-events-list .tribe-events-content {
+    /*adds space between event image and event text */
+    padding: 0 !important;
+    padding-left: 9px !important;
+}
+
+.tribe-event-date-start {
+    /* adds space between event image and date information */
+    padding-left: 9px !important;
+}
+
+.tribe-events-venue-details {
+    /* removes venue details from list view */
+    display: none !important;
+}
+
+/* The css below handles more of the venue details, saving in case the client changes his mind */
+
+/* .tribe-locality {
+    display: none;
+}
+
+.tribe-delimiter {
+    display: none;
+} */
+
+/* .tribe-postal-code {
+    display: none;
+}
+
+.tribe-country-name {
+    display: none !important;
+}
+
+.tribe-events-gmap {
+    display: none;
+}
+
+*/
+
+/* #tribe-events .tribe-events-list .tribe-events-event-meta .author>div {
+    border-bottom: none;
+} */
+
+/* end of venue details */
+
+/* list events hover effect */
+
+.tribe-events-event-image {
+    width: 30% !important;
+    min-height: auto !important;
+}
+
+.custom-container {
+    /* float left stops overflow from adding margins */
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    float: left;
+    margin-right: 0 !important;
+}
+
+@media only screen and (max-width:676px) {
+    .custom-container {
+        width: 100%;
+    }
+}
+
+.tribe-events-event-image {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.tribe-img-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(160, 206, 78, 0.8);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.custom-container:hover .tribe-img-hover {
+    width: 100%;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 16px;
+    /* text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+/* blogi site */
+
+.fusion-date-and-formats {
+    display: none !important;
+}
