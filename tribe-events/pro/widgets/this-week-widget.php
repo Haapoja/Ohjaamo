@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!-- This Week Title -->
     <?php do_action( 'tribe_events_before_this_week_title' ) ?>
     <?php $thismonday = tribe_get_this_week_first_week_day( $this_week_template_vars['start_date'] );
-			$thismonday = date_create( $thismonday )->format( 'F j, Y' ); ?>
+			$thismonday = date_create( $thismonday )->format( 'W' ); ?>
     <h2 class="tribe-events-page-title">Tapahtumat viikolla
         <?php echo $thismonday; ?>
     </h2>
