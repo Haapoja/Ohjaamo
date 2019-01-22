@@ -44,11 +44,8 @@ function redirect_to_specific_page() {
    $postslug = esc_url( Tribe__Events__Main::instance()->getLink() );
    global $wp;
 $wat = home_url( $wp->request )."/";
-var_dump($wat);
-var_dump($postslug);
-//    var_dump(get_the_ID());
-//    var_dump(esc_url( Tribe__Events__Main::instance()->getLink() ));
-//   var_dump($post);
+
+
    if ($postslug == $wat)  {
    wp_redirect( get_site_url().'/ajankohtaista-ohjaamossa/ohjaamossa-tapahtuu', 302 ); 
       exit;
