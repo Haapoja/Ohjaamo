@@ -31,8 +31,6 @@ a:hover {
     bottom: 0;
     right: 0;
     font-size: 13px;
-    /* padding-top: 10%; */
-    /* margin-top: 50px !important; */
 }
 
 .read-more a:hover {
@@ -91,7 +89,7 @@ a:hover {
     margin-bottom: 10px !important;
 }
 
-.tribe-event-date-start {
+.duration .tribe-event-date-start {
     /* affects frontpage calendar and event list */
     color: black !important;
     margin-top: 4px !important;
@@ -107,7 +105,8 @@ a:hover {
 
 .tribe-events-duration {
     margin-top: 0 !important;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
 }
 
 /* .tribe-events-widget-link {
@@ -140,13 +139,13 @@ h1.entry-title {
     border-bottom: 1px dotted black !important;
 }
 
-.tribe-events-read-more {
+/* .tribe-events-read-more {
     float: right !important;
     position: absolute;
     right: 0;
     bottom: 0;
     margin-bottom: 20px;
-}
+} */
 
 @media only screen and (max-width:676px) {
     .tribe-events-read-more {
@@ -208,10 +207,11 @@ h1.entry-title {
     padding-left: 14px !important;
 }
 
-.tribe-event-date-start {
-    /* adds space between event image and date information */
+/* adds space between event image and date information */
+
+/* .tribe-event-date-start {
     padding-left: 14px !important;
-}
+} */
 
 .tribe-events-venue-details {
     /* removes venue details from list view */
@@ -250,31 +250,33 @@ h1.entry-title {
 
 /* list events hover effect */
 
-.tribe-events-event-image {
+/* .tribe-events-event-image {
     width: 30% !important;
     min-height: auto !important;
-}
+} */
 
 .custom-container {
     /* float left stops overflow from adding margins */
     position: relative;
-    width: 30%;
     overflow: hidden;
     float: left;
-    margin-right: 0 !important;
+    margin-right: 10px !important;
 }
 
 @media only screen and (max-width:676px) {
     .custom-container {
         width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
     }
 }
 
-.tribe-events-event-image {
+/* .tribe-events-event-image {
     display: block !important;
     width: 100% !important;
     height: auto !important;
-}
+} */
 
 /* Uncertain about the need for a hover image effect, will save just in case */
 
@@ -311,4 +313,42 @@ h1.entry-title {
 
 .fusion-date-and-formats {
     display: none !important;
+}
+
+/* lets go fuckos */
+
+.tribe-events-title {
+    float: left;
+    background-color: white !important;
+    border-left: none !important;
+    line-height: 1 !important;
+    margin: none !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media only screen and (max-width:676px) {
+    .tribe-events-title {
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .read-more {
+        bottom: -15px;
+    }
+    .fusion-text {
+        font-size: 15px !important;
+    }
+}
+
+.list-info {
+    position: relative !important;
+    width: 100% !important;
+}
+
+.custom-excerpt {}
+
+.tribe-mini-calendar-event .list-info h2 {
+    margin-bottom: none !important;
 }

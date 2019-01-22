@@ -112,4 +112,5 @@ $organizer = tribe_get_organizer();
         <?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
 </div><!-- .tribe-events-list-event-description -->
 <?php
-do_action( 'tribe_events_after_the_content' );
+ do_action( 'tribe_events_after_the_content' );
+?>
