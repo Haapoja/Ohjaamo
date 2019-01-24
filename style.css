@@ -359,3 +359,31 @@ h1.entry-title {
 .tribe-events-abbr {
     text-decoration: none !important;
 }
+
+/* removes featured image placeholder */
+
+.fusion-events-placeholder {
+    display: none;
+}
+
+@media only screen and (min-width:1024px) {
+    .fusion-events-thumbnail img {
+        max-width: 30%;
+        float: left;
+        padding-right: 20px;
+    }
+    .fusion-events-shortcode .fusion-events-content {
+        padding-top: 10px !important;
+    }
+    .fusion-events-meta span {
+        color: black;
+    }
+}
+
+.fusion-column-wrapper {
+    border: none !important;
+}
+
+.fusion-events-thumbnail {
+    border: none !important;
+}
