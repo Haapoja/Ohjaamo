@@ -337,9 +337,6 @@ h1.entry-title {
     .read-more {
         bottom: -15px;
     }
-    .fusion-text {
-        font-size: 15px !important;
-    }
 }
 
 .list-info {
@@ -349,4 +346,16 @@ h1.entry-title {
 
 .tribe-mini-calendar-event .list-info h2 {
     margin-bottom: none !important;
+}
+
+.tribe-events-schedule span {
+    color: black !important;
+}
+
+.tribe-events-schedule h3 {
+    color: black !important;
+}
+
+.tribe-events-abbr {
+    text-decoration: none !important;
 }

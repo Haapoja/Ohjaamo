@@ -37,7 +37,8 @@ if ( isset( $address ) && $address && tribe_get_address() != '' ) {
 }
 ?>
 
-<div class="tribe-mini-calendar-event event-<?php esc_attr_e( $mini_cal_event_atts['current_post'] ); ?> <?php esc_attr_e( $mini_cal_event_atts['class'] ); ?>">
+<div
+    class="tribe-mini-calendar-event event-<?php esc_attr_e( $mini_cal_event_atts['current_post'] ); ?> <?php esc_attr_e( $mini_cal_event_atts['class'] ); ?>">
 
     <?php 
     
@@ -259,12 +260,38 @@ if ( isset( $address ) && $address && tribe_get_address() != '' ) {
     </div>
 
 
-
-
     <?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>
 
 
-
-
-
 </div> <!-- .list-info -->
+
+
+<div class="pagi-test">
+    <?php 
+  
+  query_posts(
+    array(
+        'post_type'      => 'tribe_events',
+       
+        'posts_per_page' => 1,
+    )
+);
+
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+    <?php tribe_get_template_part( 'list/single', 'event' ) ?>
+
+    <?php endwhile;
+
+else : 
+    echo 'no upcoming events'; 
+endif;
+
+wp_reset_query();
+
+?>
+
+
+
+
+</div>
