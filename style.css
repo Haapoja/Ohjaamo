@@ -373,11 +373,12 @@ h1.entry-title {
         padding-right: 20px;
     }
     .fusion-events-shortcode .fusion-events-content {
-        padding-top: 10px !important;
+        padding-top: 0px !important;
     }
-    .fusion-events-meta span {
-        color: black;
-    }
+}
+
+.fusion-events-meta span {
+    color: black;
 }
 
 .fusion-column-wrapper {
@@ -386,4 +387,14 @@ h1.entry-title {
 
 .fusion-events-thumbnail {
     border: none !important;
+}
+
+.fusion-events-post {
+    border-bottom: 2px solid gray !important;
+}
+
+.fusion-show-pagination-text .pagination {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 10%;
 }
