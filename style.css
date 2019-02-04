@@ -33,12 +33,9 @@ a:hover {
 
 /* single event */
 
-.tribe-events-single-event-title {
-    color: black !important;
-}
+/* removes category label on single event page */
 
 .tribe-events-event-categories-label {
-    /* removes category label on single event page */
     display: none;
 }
 
@@ -86,78 +83,6 @@ h1.entry-title {
     display: none !important;
 }
 
-/* List Css */
-
-.event-is-recurring {
-    display: none !important;
-}
-
-.tribe-events-loop .type-tribe_events {
-    border: none !important;
-    position: relative;
-    border-bottom: 1px dotted black !important;
-}
-
-@media only screen and (max-width:676px) {
-    .tribe-events-read-more {
-        bottom: -20px !important;
-    }
-}
-
-.tribe-events-read-more:hover {
-    color: black;
-    font-size: 14px;
-}
-
-#tribe-events-bar {
-    display: none !important;
-}
-
-.tribe-events-list-separator-month {
-    /*Used to have venue details, not needed in list view */
-    display: none !important;
-}
-
-.tribe-event-schedule-details {
-    /*date and time */
-    padding: 0px !important;
-}
-
-.type-tribe_events {
-    /* the container for an event */
-    height: auto;
-    border: none;
-}
-
-.tribe-events-list-event-title {
-    background-color: white !important;
-    border-left: none !important;
-    border-right: none !important;
-    padding-left: 14px !important;
-}
-
-.tribe-events-list-event-description {
-    /* list events text container */
-    width: 70% !important;
-}
-
-#tribe-events-content-wrapper {
-    /* default width was 700px, too small */
-    max-width: 100% !important;
-}
-
-@media only screen and (max-width:676px) {
-    .tribe-events-list-event-description {
-        width: 100% !important;
-    }
-}
-
-#tribe-events .tribe-events-list .tribe-events-content {
-    /*adds space between event image and event text */
-    padding: 0 !important;
-    padding-left: 14px !important;
-}
-
 .tribe-events-venue-details {
     /* removes venue details from list view */
     display: none !important;
@@ -165,42 +90,17 @@ h1.entry-title {
 
 /* blogi site */
 
+.fusion-single-line-meta .meta-tags {
+    display: none !important;
+}
+
+/*removes the odd edit button and other useless stuff next to the event on the blog page */
+
 .fusion-date-and-formats {
     display: none !important;
 }
 
-@media only screen and (max-width:676px) {
-    .tribe-events-title {
-        text-align: center;
-        width: 100%;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .read-more {
-        bottom: -15px;
-    }
-}
-
-.list-info {
-    position: relative !important;
-    width: 100% !important;
-}
-
-.tribe-mini-calendar-event .list-info h2 {
-    margin-bottom: none !important;
-}
-
-.tribe-events-schedule span {
-    color: black !important;
-}
-
-.tribe-events-schedule h3 {
-    color: black !important;
-}
-
-.tribe-events-abbr {
-    text-decoration: none !important;
-}
+/* happening in ohjaamo */
 
 /* removes featured image placeholder */
 
@@ -216,6 +116,12 @@ h1.entry-title {
     }
     .fusion-events-shortcode .fusion-events-content {
         padding-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width:676px) {
+    .fusion-events-meta h2 {
+        padding-top: 20px !important;
     }
 }
 
