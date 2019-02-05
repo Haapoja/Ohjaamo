@@ -142,9 +142,7 @@ h1.entry-title {
 }
 
 .fusion-show-pagination-text .pagination {
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 10%;
+    width: 30%;
 }
 
 .fusion-events-content p {
@@ -154,4 +152,8 @@ h1.entry-title {
 .fusion-events-meta h2 {
     font-weight: bold !important;
     font-size: 20px !important;
+}
+
+.event-is-recurring {
+    display: none !important;
 }
