@@ -123,6 +123,9 @@ h1.entry-title {
     .fusion-events-meta h2 {
         padding-top: 20px !important;
     }
+    .fusion-show-pagination-text .pagination {
+        width: 75%;
+    }
 }
 
 .fusion-events-meta span {
